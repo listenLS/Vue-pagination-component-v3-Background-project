@@ -5,10 +5,10 @@
     <breadcrumb class="breadcrumb-container" />
 
     <div class="right-menu">
-      <div class="right-menu-item">{{userInfoStore.name}}</div>
+      <div class="right-menu-item">{{userInfoStore.userInfo.name}}</div>
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
-          <img v-if="userInfoStore.avatar" :src="userInfoStore.avatar" class="user-avatar">
+          <img v-if="userInfoStore.userInfo.avatar" :src="userInfoStore.userInfo.avatar" class="user-avatar">
           <el-icon class="el-icon-caret-bottom">
             <arrow-down />
           </el-icon>

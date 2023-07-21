@@ -31,7 +31,7 @@ router.beforeEach(async (to, from, next) => {
       NProgress.done()
     } else { // 请求的不是登陆路由
       // 是否已经登陆
-      const hasLogin = !!userInfoStore.name
+      const hasLogin = !!userInfoStore.userInfo.name
       // 如果已经登陆直接放行
       if (hasLogin) {
         next()

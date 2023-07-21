@@ -12,6 +12,11 @@ import type { RouteRecordRaw } from 'vue-router';
  * 静态路由（默认路由）
  */
  export const staticRoutes: Array<RouteRecordRaw> = [
+  {
+    path: '/test',
+    name: 'Test',
+    component: () => import('@/views/test/index.vue')
+  },
 	{
     path: '/login',
     name: 'Login',

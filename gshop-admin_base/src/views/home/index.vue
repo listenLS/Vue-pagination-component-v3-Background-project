@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    Hello, {{userInfoStore.name}}
+    Hello, {{userInfoStore.userInfo.name}}
   </div>
 </template>
 

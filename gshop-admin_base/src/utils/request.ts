@@ -1,4 +1,4 @@
-import axios, { type AxiosResponse } from 'axios';
+import axios, { type AxiosResponse ,type AxiosRequestHeaders} from 'axios';
 import { ElMessage, ElMessageBox } from 'element-plus';
 import pinia from '@/stores/index';
 import { useUserInfoStore } from '../stores/userInfo';
@@ -19,7 +19,11 @@ const service = axios.create({
 // 添加请求拦截器
 service.interceptors.request.use(
 	(config) => {
-    
+    const userInfoStore=useUserInfoStore()
+		const token=userInfoStore.token
+		if(token){
+			(config.headers as AxiosRequestHeaders).token=token
+		}
 		return config;
 	}
 );
