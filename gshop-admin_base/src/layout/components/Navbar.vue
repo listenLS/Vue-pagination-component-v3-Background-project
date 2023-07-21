@@ -19,7 +19,7 @@
               <el-dropdown-item>首页</el-dropdown-item>
             </router-link>
             <el-dropdown-item divided @click="logout">
-              <span style="display:block;">退出登陆</span>
+              <span style="display:block;">退出登录</span>
             </el-dropdown-item>
           </el-dropdown-menu>
         </template>

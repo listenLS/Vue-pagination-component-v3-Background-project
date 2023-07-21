@@ -43,7 +43,7 @@
       </el-form-item>
 
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;height: 40px;" 
-        @click.native.prevent="handleLogin">登  陆</el-button>
+        @click.native.prevent="handleLogin">登  录</el-button>
 
     </el-form>
   </div>
@@ -144,7 +144,7 @@ $cursor: #fff;
 }
 /* reset element-ui css */
 .login-container {
-  background-image: url(../../assets/bg.jpg);
+  background-image: url(../../assets/zz2.gif);
   background-color: #2d3a4b;
   background-size: cover;
   .el-input {
