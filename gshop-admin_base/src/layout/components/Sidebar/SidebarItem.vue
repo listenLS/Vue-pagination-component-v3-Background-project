@@ -9,7 +9,7 @@
       </app-link>
     </template>
 
-    <el-sub-menu v-else ref="subMenuRef" :index="resolvePath(item.path)" popper-append-to-body>
+    <el-sub-menu v-else ref="subMenuRef" :index="resolvePath(item.path)">
       <template #title>
         <item :icon="item.meta.icon || (item.meta && item.meta.icon)" 
             :title="!appStore.sidebar.opened && !isNest ? '' : item.meta.title" />

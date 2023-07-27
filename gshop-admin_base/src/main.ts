@@ -11,6 +11,8 @@ import './permission'
 
 const app = createApp(App)
 
+import CategorySelector from '@/components/CategorySelector/index.vue'
+app.component('CategorySelector',CategorySelector)
 
 ElSvg(app)
 
